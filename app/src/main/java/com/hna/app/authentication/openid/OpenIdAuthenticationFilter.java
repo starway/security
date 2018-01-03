@@ -3,7 +3,7 @@
  */
 package com.hna.app.authentication.openid;
 
-import com.imooc.security.core.properties.SecurityConstants;
+import com.hna.properties.SecurityConstants;
 import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -98,7 +98,7 @@ public class OpenIdAuthenticationFilter extends AbstractAuthenticationProcessing
 	 * Sets the parameter name which will be used to obtain the username from
 	 * the login request.
 	 *
-	 * @param usernameParameter
+	 * @param openIdParameter
 	 *            the parameter name. Defaults to "username".
 	 */
 	public void setOpenIdParameter(String openIdParameter) {
